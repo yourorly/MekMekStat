@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MekMek Stats</title>
+    <link rel="shortcut icon" href="res/360.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container-fluid dashboard-container">
+    <h1 class="text-white fw-light mb-4">MekMek</h1>
+
+    <ul class="nav nav-tabs custom-tabs border-0 mb-4">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Overview</a>
+        </li>
+    </ul>
+
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="section-box bandwidth-chart p-0">
+                <h2 class="text-white fw-normal fs-6 p-3 pb-2">Status</h2>
+                <div class="chart-area">
+                    <div class="chart-data-label">Uptime</div>
+                    <div class="row">
+                        <div class="col-lg-8" style="margin-bottom: 30px;">
+                            <img id="server1stat" src="res/red.png" alt="" height="80in" style="display:inline-block;">
+                            <h6 style="display:inline-block;"><strong>IP : </strong>radio-authorization.gl.at.ply.gg <strong>Port : </strong>14365</h6><a class="abutton" href="minecraft://?addExternalServer=LSMekmek1|radio-authorization.gl.at.ply.gg:14365">Add Server</a>
+                        </div>
+                        
+                        <div class="col-lg-8">
+                            <img id="server2stat" src="res/green.png" alt="" height="80in">
+                            <h6 style="display:inline-block;"><strong>IP : </strong>apr-analysts.gl.at.ply.gg <strong>Port : </strong>1619</h6><a class="abutton" href="minecraft://?addExternalServer=LSMekmek2|apr-analysts.gl.at.ply.gg:1619">Add Server</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+            <div class="section-box tunnel-usage p-3">
+                <h2 class="text-white fw-normal fs-6">Uptime</h2>
+                <div class="usage-item active">
+                    <span class="name">radio-authorization.gl.at.ply.gg:14365</span>
+                    <span class="data" id="statusdata1">Uptime : ? <br> Downtime: ? <br> Elapsed: ? </span>
+                </div>
+                <div class="usage-item active">
+                    <span class="name">apr-analysts.gl.at.ply.gg:1619</span>
+                    <span class="data" id="statusdata2">Uptime : ? <br> Downtime: ? <br> Elapsed: ? </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="section-box agent-usage p-3">
+                <h2 class="text-white fw-normal fs-6">Info</h2>
+                <div class="usage-list">
+                    <div class="usage-item">
+                        <span class="name">Player Count</span>
+                        <span class="data" id="plrcount">?</span>
+                    </div>
+                    <div class="usage-item">
+                        <span class="name">MOTD</span>
+                        <span class="data" id="motd">?</span>
+                    </div>
+                    <div class="usage-item">
+                        <span class="name">Server Version</span>
+                        <span class="data" id="version">?</span>
+                    </div>
+                    <div class="usage-item">
+                        <span class="name">Gamemode</span>
+                        <span class="data" id="servergm">?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6" hidden>
+            <div class="section-box agent-usage p-3">
+                <h2 class="text-white fw-normal fs-6">Debug</h2>
+                <div class="usage-list">
+                    <div class="usage-item">
+                        <button onclick="checkOnce()">Test Responds</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container row">
+            <div class="col-md-4">
+                <h3>MekMek</h3>
+                <p>
+                    MekMek is an minecraft server focused on survival and exploration. Our servers are designed to have fun and socialize for players. Join us for exciting adventures and a vibrant community!
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3>Support / Community</h3>
+                <div class="social-icons">
+                    <a href="https://discord.gg/MvhEQzCXcf" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-2">
+            <p>© 2025 | MekMek LS Development Team. All Rights Reserved.</p>
+        </div>
+
+</div>
+        
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

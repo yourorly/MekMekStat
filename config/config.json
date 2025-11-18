@@ -1,5 +1,5 @@
 {
-  "maintenance": true,
+  "maintenance": false,
   "maintenance_text": "Site under maintenance — back soon",
   "interval": 60,
   "servers": [

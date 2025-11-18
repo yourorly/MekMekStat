@@ -203,3 +203,14 @@ body {
     padding-top: 20px;
     text-align: center;
 }
+
+/* #maintain{
+    filter: blur(5px);
+} */
+
+#maintenancetext {
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    display: none;
+}

@@ -1,1 +1,9 @@
-
+{
+  "maintenance": true,
+  "maintenance_text": "Site under maintenance — back soon",
+  "interval": 60,
+  "servers": [
+  "radio-authorization.gl.at.ply.gg:14365",
+  "apr-analysts.gl.at.ply.gg:1619"
+  ]
+}
